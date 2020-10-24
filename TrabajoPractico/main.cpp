@@ -139,7 +139,7 @@ int buscarconductor()
         {
             if ((strcmp(c.conductorID, buscado)==0) || (strcmp(c.email, buscado)==0))
             {
-                cout << "\n¿Que desea hacer?" << endl;
+                cout << "\nÂ¿Que desea hacer?" << endl;
                 cout << "A - Mostrar datos del conductor " << c.conductorID << endl;
                 cout << "B - Desactivar al conductor " << c.conductorID << endl;
                 cout << "C - Mostrar infracciones y monto en total del conductor " << c.conductorID << endl;
@@ -295,6 +295,7 @@ void procesarlote()
         if(f2=fopen(filename2, "ab"))
         {
             fwrite(inf, sizeof(infraccion),1,f2);
+            fclose(f2);
         }
         else
         {
