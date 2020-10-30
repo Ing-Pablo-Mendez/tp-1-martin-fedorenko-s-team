@@ -139,7 +139,7 @@ int buscarconductor()
         {
             if ((strcmp(c.conductorID, buscado)==0) || (strcmp(c.email, buscado)==0))
             {
-                cout << "\nÂ¿Que desea hacer?" << endl;
+                cout << "\n¿Que desea hacer?" << endl;
                 cout << "A - Mostrar datos del conductor " << c.conductorID << endl;
                 cout << "B - Desactivar al conductor " << c.conductorID << endl;
                 cout << "C - Mostrar infracciones y monto en total del conductor " << c.conductorID << endl;
